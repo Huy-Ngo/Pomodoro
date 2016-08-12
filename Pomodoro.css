@@ -1,0 +1,81 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: gray;
+  color: white;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 6em;
+}
+
+a {
+  color: tomato;
+}
+
+footer {
+  margin: 5em;
+}
+header {
+  margin: 0 auto;
+}
+
+#button {
+  height: 24.5em;
+  width: 24.5em;
+  position: relative;
+  top: 0.25em;
+  background-color: darkgray;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+#button:focus {
+  outline: none;
+}
+
+#startstop,
+#stat {
+  font-size: 2.5em;
+}
+
+#len {
+  font-size: 1.5em;
+  margin: 2em;
+}
+
+#len div button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#clock {
+  background-color: #666;
+  width: 25em;
+  border-radius: 50%;
+  height: 25em;
+  margin: 0 auto;
+  z-index: -2;
+  overflow: hidden;
+}
+
+#progress-one,
+#progress-two {
+  content: "";
+  position: absolute;
+  width: 25em;
+  height: 25em;
+  z-index: 0;
+  border-radius: 50%;
+  background-color: #666;
+  clip: rect(0, 12.5em, 25em, 0);
+}
+
+#progress-hidden {
+  clip: rect(0, 25em, 25em, 12.5em);
+}
+
+#progress-one {
+  clip: rect(0, 25em, 25em, 12.5em);
+}
